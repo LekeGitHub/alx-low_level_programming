@@ -6,7 +6,7 @@
 /* betty style doc for function main goes there */
 /**
  *main: check the type of string n is
- *
+ *Description: Get random num type and print
  *return: 0
  */
 int main(void)
@@ -16,14 +16,17 @@ int main(void)
 		srand(time(0));
 		n = rand() - RAND_MAX / 2;
 		/* your code goes there */
-		if( n > 0 ){
-			printf("is positive\n");
+		if(n > 0) 
+		{
+			printf("%i is positive\n", n);
 		}
-		else if( n==0 ){
-			printf( "is zero\n" );
+		else if(n==0) 
+		{
+			printf("%i "is zero\n", n);
 		}
-		else{
-			printf( "is negative\n" );
+		else 
+		{
+			printf("%i "is negative\n, n");
 		}
 		return (0);
 }		
