@@ -1,13 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 #include <stdio.h>
 
-/* betty style doc for function main goes there */
 /**
- *main: check the type of string n is
+ *main - main block
+ *
  *Description: Get random num type and print
- *return: 0
+ *
+ *Return: 0
  */
 int main(void)
 {
@@ -15,18 +15,12 @@ int main(void)
 
 		srand(time(0));
 		n = rand() - RAND_MAX / 2;
-		/* your code goes there */
-		if(n > 0) 
-		{
-			printf("%i is positive\n", n);
-		}
-		else if(n==0) 
-		{
-			printf("%i "is zero\n", n);
-		}
+
+		if (n > 0) 
+			printf("%d is positive\n", n);
+		else if (n < 0) 
+			printf("%d is negagtive\n", n);
 		else 
-		{
-			printf("%i "is negative\n, n");
-		}
+			printf("%d is zero\n", n);
 		return (0);
 }		
