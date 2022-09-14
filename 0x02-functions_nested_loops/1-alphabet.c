@@ -2,7 +2,7 @@
 /**
  * Main - Entry Point
  *
- * Description: A code to print alphabet in lowercase
+ * print_alphabet - function that prints alphabet
  *
  * Author: Adetoroye Oluleke Moses
  *
