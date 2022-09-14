@@ -4,12 +4,9 @@
  *
  * print_alphabet - function that prints alphabet
  *
- * Author: Adetoroye Oluleke Moses
- *
- * Return: 0
  */
 
-void print_alphabet(void)
+void print_alphabe(void)
 {
 	int ch;
 
