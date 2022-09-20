@@ -2,12 +2,12 @@
 /**
  * main - function that takes a pointer to an int as parameter and updates the value it points to
  *
- * Description: Pointer Function
+ * @n: A pointer to an int that will be updated
  *
  * Return: 0
  */
 
-void reset_to_98(int *n)
+void reset_to_98(int *)
 {
-*n = 98;	
+	*n = 98;
 }
