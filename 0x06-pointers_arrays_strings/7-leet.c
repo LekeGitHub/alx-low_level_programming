@@ -18,14 +18,14 @@ char *leet(char *s)
 	{
 		/**
 		 * loop through array value five times
-		 * to check if the value is equal to 
+		 * to check if the value is equal to
 		 * any small letter in array sl or
 		 * upper letter in array ul and if it
-		 * is replace it with the value in array
+		 * is replace it with the value in array n
 		*/
 		for (i = 0; i < 5; i++)
 		{
-			if(s[c] = n[i] || s[c] == ul[i])
+			if (s[c] == sl[i] || s[c] == ul[i])
 			{
 				s[c] = n[i];
 				break;
@@ -33,5 +33,5 @@ char *leet(char *s)
 		}
 		c++;
 	}
-	return (s);	
+	return (s);
 }
