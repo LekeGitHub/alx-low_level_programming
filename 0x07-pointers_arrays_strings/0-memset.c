@@ -1,12 +1,13 @@
 #include "main.h"
-/*
- * main - memset funtion
+/**
+ * _memset - fill n bytes of emory with a constant value
  *
- * @s - functions that fills memory with byte
+ * @s: pointer to memory area
+ * @b: constant value
+ * @n: number of bytes to fill
  *
- * Return : s
- */
-
+ * Return: memory area
+*/
 char *_memset(char *s, char b, unsigned int n)
 {
 	int size = n;
@@ -14,6 +15,7 @@ char *_memset(char *s, char b, unsigned int n)
 	if (size > 0)
 	{
 		int i;
+
 		for (i = 0; i < size; i++)
 			s[i] = b;
 	}
