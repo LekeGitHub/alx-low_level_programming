@@ -6,20 +6,24 @@
  *
  * Return: return nothing
  */
+
 void print_chessboard(char (*a)[8])
 {
-	int row;
-	int column;
+	int i, j;
 
-	while (row < 64)
+	i = 0;
+	j = 0;
+
+	while (i < 64)
 	{
-		if (row % 8 == 0 && row != 0)
+		if (i % 8 == 0 && i != 0)
 		{
-			column = row;
+			j = i;
 			_putchar('\n');
 		}
-		_putchar(a[row / 8][row - column]);
-		row++;
+
+		_putchar(a[i / 8][i - j]);
+		i++;
 	}
-	_putchar('\n')
+	_putchar('\n');
 }
