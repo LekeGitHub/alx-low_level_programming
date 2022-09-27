@@ -11,10 +11,15 @@ void print_chessboard(char (*a)[8])
 	int row;
 	int column;
 
-	for (row = 0; row < 8; row++)
+	while (row < 64)
 	{
-		for (column = 0; column < 8; column++)
-		_putchar(a[row][column]);
-		_putchar('\n');
+		if (row % 8 == 0 && row != 0)
+		{
+			column = row;
+			_putchar('\n');
+		}
+		_putchar(a[row / 8][row - column]);
+		row++;
 	}
+	_putchar('\n')
 }
