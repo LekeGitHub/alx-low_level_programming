@@ -3,12 +3,13 @@
  * create_array - functon creates an of chars
  * @size: an array size variable
  * @c: initialization character variable
- * Return: NULL if size = 0,
+ * Return: NULL if it fails or
+ * Pointer to array.,
  */
 char *create_array(unsigned int size, char c)
 {
-	unsigned int i;
 	char *a;
+	unsigned int i;
 
 	a = malloc(size * sizeof(*a));
 	if (a == NULL)
