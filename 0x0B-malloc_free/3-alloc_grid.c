@@ -4,7 +4,7 @@
 /**
  * alloc_grid - create a matrix using malloc
  * @width: width of the metrix
- * @heigjt: height of the matrix
+ * @height: height of the matrix
  *
  * Return: return a pointer of pointer or null
  */
