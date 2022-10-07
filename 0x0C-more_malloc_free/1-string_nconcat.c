@@ -1,37 +1,51 @@
 #include "main.h"
+
 /**
- * strinng_nconcat - function concats
- * @s1: first string to be conca
- * @s2: second string t be con
- * @n: size to be allocated
- * Return: pointer
+ * string_nconcat - concatenates two strings.
+ * @s1: first string
+ * @s2: second string
+ * @n: index
+ * Return: char pointer
  */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, j, len1, len2, len;
 	char *p;
+	unsigned int size1 = 0, size2 = 0, i;
 
 	if (s1 == NULL)
-		return ("");
-	if (s2 == NULL)
-		return ("");
-	for (i = 0, s1[i]; i++)
-		len1++;
-	if (n > len2)
-		len = len1 + len2;
-	else
-		len = leen1 + n;
-	p = malloc((sizeof(char) * len + 1));
-	if (p == NULL)
-	{
-		return (NULL);
-	}
-	
-	j = 0;
+	s1 = "";
 
-	for (i = 0; s1[i]; i++)
-		p[j++] = s1[i];
-	for (i = 0; s2[i] && i < n; i++)
-		p[j++] = s2[i];
-	return (p);
+	if (s2 == NULL)
+	s2 = "";
+
+	while (s1[size1] != '\0')
+	{
+		size1++;
+	}
+
+	while (s2[size2] != '\0')
+	{
+		size2++;
+	}
+
+	if (n > size2)
+		n = size2;
+		p = malloc((size1 + n + 1) * sizeof(char));
+
+	if (p == NULL)
+		return (0);
+
+	for (i = 0; i < size1; i++)
+	{
+		p[i] = s1[i];
+	}
+
+	for (; i < (size1 + n); i++)
+	{
+		p[i] = s2[i - size1];
+	}
+	p[i] = '\0';
+
+return (p);
 }
