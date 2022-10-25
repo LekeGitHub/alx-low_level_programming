@@ -1,4 +1,5 @@
-#include "lists.h"
+#include "list.h"
+#include <stdio.h>
 
 /**
  * listint_len - counts the number of nodes in a linked list
